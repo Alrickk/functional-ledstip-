@@ -24,13 +24,7 @@ def play_mp3(mp3_filename):
     audio.play(decoder)
     start_music = time.time()
     while audio.playing:
-        # Chaning this to prevent infinite loop
-        music_duration = time.time()-start_music
-        if music_duration > MAX_AUDIO_PLAY_TIME_S:
-            break
-        else:
-            # continue jumps to the next iteration of a loop. Pass does something very specific and not great.
-            continue
+       pass
     
 def what_range_does(end_range):
     print(f"when given range({end_range}), the function will iterate through the following")
