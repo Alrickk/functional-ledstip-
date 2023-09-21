@@ -84,7 +84,7 @@ def play_mp3(filename):
         pass
     #file selection
 while True:
-        if button.value:
-          filename = random.choice(songs)
-        play_mp3(filename)
-        print(filename)
+    if button.value:
+        filename = random.choice(songs)
+    play_mp3(filename)
+    print(filename)
